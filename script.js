@@ -105,7 +105,7 @@ function timer() {
 				seconds = 0;
 			}
 		// Update the timer in HTML with the time it takes the user to play the game
-		timeCounter.innerHTML = "<i class='fa fa-hourglass-start'></i>" + " Timer: " + minutes + " Mins " + seconds + " Secs" ;
+		timeCounter.innerHTML = "<i class='fa fa-hourglass-start'></i>" + " Temps: " + minutes + " Mins " + seconds + " Secs" ;
 	}, 1000);
 }
 
@@ -128,7 +128,7 @@ function resetEverything() {
 	timeStart = false;
 	seconds = 0;
 	minutes = 0;
-	timeCounter.innerHTML = "<i class='fa fa-hourglass-start'></i>" + " Timer: 00:00";
+	timeCounter.innerHTML = "<i class='fa fa-hourglass-start'></i>" + " Temps: 00:00";
 	// Reset star count and the add the class back to show stars again
 	star[1].firstElementChild.classList.add("fa-star");
 	star[2].firstElementChild.classList.add("fa-star");
@@ -260,9 +260,9 @@ function AddStats() {
 	// Select all p tags with the class of stats and update the content
 	let p = stats.querySelectorAll("p.stats");
 			// Set the new <p> to have the content of stats (time, moves and star rating)
-		p[0].innerHTML = "Time to complete: " + minutes + " Minutes and " + seconds + " Seconds";
-		p[1].innerHTML = "Moves Taken: " + moves;
-		p[2].innerHTML = "Your Star Rating is: " + starCount + " out of 3";
+		p[0].innerHTML = "Temps per completar: " + minutes + " Minutes and " + seconds + " Seconds";
+		p[1].innerHTML = "Moviments fets: " + moves;
+		p[2].innerHTML = "La seva valoracio d'estrelles es: " + starCount + " de 3";
 }
 
 /*
