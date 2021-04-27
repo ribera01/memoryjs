@@ -1,2 +1,2 @@
 # memoryjs
-Memory Game with js
+Joc del Memory
