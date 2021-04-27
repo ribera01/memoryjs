@@ -260,7 +260,7 @@ function AddStats() {
 	// Select all p tags with the class of stats and update the content
 	let p = stats.querySelectorAll("p.stats");
 			// Set the new <p> to have the content of stats (time, moves and star rating)
-		p[0].innerHTML = "Temps per completar: " + minutes + " Minutes and " + seconds + " Seconds";
+		p[0].innerHTML = "Temps per completar: " + minutes + " Minuts i " + seconds + " Segons";
 		p[1].innerHTML = "Moviments fets: " + moves;
 		p[2].innerHTML = "La seva valoracio d'estrelles es: " + starCount + " de 3";
 }
