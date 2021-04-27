@@ -69,7 +69,7 @@ function startGame() {
 		// Append <img> to <li>
 		liTag.appendChild(addImage);
 		// Set the img src path with the shuffled deck
-		addImage.setAttribute("src", "https://github.com/Polri10/memoryjs/tree/main/img" + shuffledDeck[i] + "?raw=true");
+		addImage.setAttribute("src", "https://github.com/Polri10/memoryjs/tree/main/img/" + shuffledDeck[i] + "?raw=true");
 		// Add an alt tag to the image
 		addImage.setAttribute("alt", "image of vault boy from fallout");
 		// Update the new <li> to the deck <ul>
